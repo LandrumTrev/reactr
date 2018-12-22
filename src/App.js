@@ -1,17 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Master from './components/Master';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <p>
-            reactr :: a memory game
-          </p>
-        </header>
-      </div>
-    );
-  }
+function App() {
+  return <Master />;
 }
 
 export default App;

@@ -1,0 +1,27 @@
+/* Footer style.css */
+
+.footer {
+  background-color: #888;
+  height: 30px;
+  position: relative;
+  color: #eee;
+  /* overflow: auto; */
+}
+
+.footer > .credits {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #666;
+  padding: 8px;
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+/* .footer > .bottom > img {
+  width: 20px;
+  position: relative;
+  top: 3px;
+  left: 2px;
+} */

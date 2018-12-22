@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/images/gp-a.jpg",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "image": "/assets/images/gp-b.jpg",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "image": "/assets/images/gp-c.jpg",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "image": "/assets/images/gp-d.jpg",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "image": "/assets/images/gp-e.jpg",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "image": "/assets/images/gp-f.jpg",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "image": "/assets/images/gp-g.jpg",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "image": "/assets/images/gp-h.jpg",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "image": "/assets/images/gp-i.jpg",
+    "clicked": false
+  }
+]
