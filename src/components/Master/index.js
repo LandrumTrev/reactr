@@ -28,6 +28,14 @@ class Master extends Component {
 
   // ==========================================
 
+  // called on page load / reload when entire Master component first mounts
+  componentDidMount() {
+    // run current "data" array through shuffleGamePieces() and reset state
+    this.setState({ data: this.shuffleGamePieces(this.state.data) });
+  }
+
+  // ==========================================
+
   // event handler attached to GamePiece handleClick listener
   // id of the GamePiece clicked passed in as the arg to the param id here
   handleGamePieceClick = id => {
@@ -59,20 +67,64 @@ class Master extends Component {
 
   // ==========================================
 
-  // called by handleGamePieceClick when user clicks an unclicked GamePiece
+  //
   handleCorrectGuess = dataArrayCopy => {
-    // code
-  }
+    // create score and highScore variables by deconstructing this.state
+    const { score, highScore } = this.state;
+    // create a variable representing new score value (old score + 1)
+    const newScore = score + 1;
+    // var for newHighScore, checks for highest of newScore vs current highScore
+    const newHighScore = Math.max(newScore, highScore);
 
+    // then reset all current state values with updated correct-guess values
+    this.setState({
+      // after each correct guess, shuffle the position of all GamePieces
+      data: this.shuffleGamePieces(dataArrayCopy),
+      // and set the new score (score + 1)
+      score: newScore,
+      // and set the newHighScore, whether changed or not
+      highScore: newHighScore
+    });
+  };
 
+  // -----------
+  // helper function:
+
+  // called on componentDidMount(), and afterwards by handleCorrectGuess
+  shuffleGamePieces = data => {
+    // set iterator to length of data array minus one
+    let i = data.length - 1;
+    // a while loop that randomly swaps positions of data array object elements
+    while (i > 0) {
+      // set j as random number between 1 and iterator i+1
+      const j = Math.floor(Math.random() * (i + 1));
+      // save the value of the object currently at index data[i]
+      const temp = data[i];
+      // then replace the object at index data[i] with object at data[j]
+      data[i] = data[j];
+      // then replace the object at index data[j] with saved data[i] value
+      data[j] = temp;
+      // now data[i] and data[j] values have been swapped
+      // then decrement the iterator to cycle through the array
+      i--;
+      // NOTE: this cycles through all but the last element of the array,
+      // but since j random CAN generate the index of the last array element,
+      // it will most likely also be swapped on any given shuffle.
+    }
+    // then RETURN the new shuffled "data" array as the value of shuffleGamePieces
+    return data;
+  };
 
   // ==========================================
 
+  //
+  handleWrongGuess = dataArrayCopy => {};
 
+  // -----------
+  // helper function:
 
-  // ==========================================
-
-
+  //
+  resetGame = param => {};
 
   // ==========================================
 
