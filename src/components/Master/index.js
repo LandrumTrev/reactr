@@ -90,7 +90,7 @@ class Master extends Component {
   // -----------
   // helper function:
 
-  // called on componentDidMount(), and afterwards by handleCorrectGuess
+  // called on componentDidMount(), and afterwards by handleCorrectGuess()
   shuffleGamePieces = data => {
     // set iterator to length of data array minus one
     let i = data.length - 1;
@@ -117,14 +117,34 @@ class Master extends Component {
 
   // ==========================================
 
-  //
-  handleWrongGuess = dataArrayCopy => {};
+  // called by an incorrect guess from handleGamePieceClick()
+  // resets and shuffles the data array, resets score to 0
+  handleWrongGuess = dataArrayCopy => {
+    // tell React to change values of this.state data
+    this.setState({
+      // run the passed in data array through resetGame()
+      // which sets all array items clicked: value to false
+      // and also shuffles the index position of all array objects
+      // and set reset and shuffled array as the new value of this.state.data
+      data: this.resetGame(dataArrayCopy),
+      // and also reset the value of this.state.score to 0
+      score: 0
+    });
+  };
 
   // -----------
   // helper function:
 
-  //
-  resetGame = param => {};
+  // called by handleWrongGuess() to reset all GamePieces to clicked: false
+  resetGame = data => {
+    // create a .map() copy of the data array,
+    // callback destructures each array item to isolate it,
+    // and sets each array item object's clicked: value to false
+    const resetDataArray = data.map(item => ({ ...item, clicked: false }));
+    // then pass the reset array through the shuffleGamePieces() function
+    // and return the new resetDataArray as the value of this resetGame()
+    return this.shuffleGamePieces(resetDataArray);
+  };
 
   // ==========================================
 

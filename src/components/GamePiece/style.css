@@ -8,6 +8,7 @@
   margin: 8px 25px;
   border: 5px solid #ccc;
   box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.26);
+  cursor: pointer;
 }
 
 .game-piece:hover {
@@ -17,7 +18,7 @@
 }
 
 .shake {
-  animation: shake .5 0.0125s;
+  animation: shake .5s 0.0125s;
 }
 
 @keyframes shake {
