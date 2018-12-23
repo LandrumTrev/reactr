@@ -153,18 +153,29 @@ class Master extends Component {
       <div>
         {/* pass score + highScore state as props to NavBar to display */}
         <NavBar score={this.state.score} highScore={this.state.highScore} />
+        {/* display the jumbotron page headline box */}
         <Jumbo />
+        {/* create the GameBox to hold all the GamePieces */}
         <GameBox>
+          {/* and create a GamePiece for each item in the "data" array */}
           {this.state.data.map(item => (
+            // map props on each GamePiece from this.state "data" array objects
             <GamePiece
+              // add a key prop from object's id for React's tracking usage
               key={item.id}
+              // add an id prop from object's id for our usage (redundant?)
               id={item.id}
+              // add shake prop to use as a CSS class only on game reset
               shake={!this.state.score && this.state.highScore}
+              // add handleClick prop for use by an onClick event listener
+              // which is assigned Master's (this) handleGamePieceClick()
               handleClick={this.handleGamePieceClick}
+              // add image for use by inline CSS style to set GamePiece bkgd img
               image={item.image}
             />
           ))}
         </GameBox>
+        {/* attach the Footer component to the bottom of page */}
         <Footer />
       </div>
     );
