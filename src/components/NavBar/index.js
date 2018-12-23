@@ -11,7 +11,6 @@ import "./style.css";
 function NavBar(props) {
   return (
     <nav className="navbar fixed-top">
-      {/* <div className="container pb-0"> */}
         <ul>
           <li className="display-message">
             {/* pass NavStatus props from Master: score and highScore */}
@@ -19,10 +18,9 @@ function NavBar(props) {
           </li>
           <li className="display-score">
             {/* also use props: score and highScore here for direct display */}
-            <span class="high-score">{props.highScore} HIGH SCORE </span> • <span class="current-score"> CURRENT SCORE  {props.score}</span>
+            <span className="high-score">{props.highScore} HIGH SCORE </span> • <span className="current-score"> CURRENT SCORE  {props.score}</span>
           </li>
         </ul>
-      {/* </div> */}
     </nav>
   );
 }

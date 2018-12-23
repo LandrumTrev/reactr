@@ -165,7 +165,7 @@ class Master extends Component {
               key={item.id}
               // add an id prop from object's id for our usage (redundant?)
               id={item.id}
-              // add shake prop to use as a CSS class only on game reset
+              // add shake prop to use as a CSS className only on game reset
               shake={!this.state.score && this.state.highScore}
               // add handleClick prop for use by an onClick event listener
               // which is assigned Master's (this) handleGamePieceClick()
