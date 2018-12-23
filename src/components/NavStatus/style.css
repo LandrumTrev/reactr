@@ -1,37 +1,37 @@
 /* NavStatus style.css */
 
 .navbar .correct {
-  animation: .4s correct;
+  animation: 2s correct;
 }
 
 .navbar .incorrect {
-  animation: .4s incorrect;
+  animation: 2s incorrect;
 }
 
 @keyframes correct {
   0% {
-    color: white;
+    color: #555;
   }
 
   50% {
-    color: #2e7d32;
+    color: #7cfa82;
   }
 
   100% {
-    color: white;
+    color: #555;
   }
 }
 
 @keyframes incorrect {
   0% {
-    color: white;
+    color: #555;
   }
 
   50% {
-    color: #c62828;
+    color: #ffaaaa;
   }
 
   100% {
-    color: white;
+    color: #555;
   }
 }

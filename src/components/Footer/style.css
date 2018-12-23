@@ -6,6 +6,21 @@
   width: 100%;
 }
 
+.reset-link {
+  text-decoration: none;
+  color: #eee;
+  /* margin-left: 10px; */
+  /* float: left; */
+  /* padding: 6px; */
+  /* font-weight: 600; */
+  /* font-size: 0.8rem; */
+}
+
+.reset-link:hover {
+  text-decoration: none;
+  color: rgb(123, 29, 29);
+}
+
 .github-link {
   text-decoration: none;
   color: #eee;

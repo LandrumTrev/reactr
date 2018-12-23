@@ -2,42 +2,45 @@
 
 .navbar {
   background-color: #aaa;
-  min-height: 30px;
-  /* position: fixed; */
-  /* z-index: 1; */
-  /* white-space: nowrap; */
-  width: 100%;
   font-size: 1rem;
+  border-bottom: 1px solid #888;
 }
 
 .navbar ul {
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 
 .navbar li {
   display: inline-block;
-  padding: 10px 10px;
-  /* width: 33.33%; */
-  text-align: center;
 }
 
-.navbar a {
-  text-decoration: none;
-  color: #eee;
+.display-score {
+  float: right;
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+
+.current-score {
+  color: rgb(130, 14, 14);
   font-weight: 900;
 }
 
-/* @media (max-width: 420px) {
-  .navbar li:first-child {
-    width: 25%;
-  }
+.high-score {
+  color: rgb(26, 95, 169);
+  font-weight: 600;
+}
 
-  .navbar li:nth-child(2) {
-    width: 35%;
-  }
+.display-message {
+  font-size: 0.95rem;
+  color: #555;
+}
 
-  .navbar li:last-child {
-    width: 40%;
+@media (max-width: 480px) {
+  .navbar li {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
-} */
+}

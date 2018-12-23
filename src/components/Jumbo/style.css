@@ -2,4 +2,6 @@
 
 .jumbotron {
   background-color: #ccc;
+  height: 3rem;
+  /* text-align: left; */
 }

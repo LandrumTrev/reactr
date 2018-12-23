@@ -10,18 +10,19 @@ import "./style.css";
 // Master passes in props: score and highScore
 function NavBar(props) {
   return (
-    <nav className="navbar">
-      <ul>
-        <li className="brand">
-          <a href="/">Reactr</a>
-        </li>
-        {/* pass NavStatus props from Master: score and highScore */}
-        <NavStatus score={props.score} highScore={props.highScore} />
-        <li>
-          {/* also use props: score and highScore here for direct display */}
-          score: {props.score} :: high score: {props.highScore}
-        </li>
-      </ul>
+    <nav className="navbar fixed-top">
+      {/* <div className="container pb-0"> */}
+        <ul>
+          <li className="display-message">
+            {/* pass NavStatus props from Master: score and highScore */}
+            <NavStatus score={props.score} highScore={props.highScore} />
+          </li>
+          <li className="display-score">
+            {/* also use props: score and highScore here for direct display */}
+            <span class="high-score">{props.highScore} HIGH SCORE </span> • <span class="current-score"> CURRENT SCORE  {props.score}</span>
+          </li>
+        </ul>
+      {/* </div> */}
     </nav>
   );
 }

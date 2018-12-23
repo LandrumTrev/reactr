@@ -21,7 +21,6 @@ function GamePiece(props) {
       // to a public/assets/images/gp-number.jpg
       style={{ backgroundImage: `url('${props.image}')` }} 
       className={`game-piece${props.shake ? " shake" : ""}`}
-      // className='game-piece shake'
     />
   );
 }

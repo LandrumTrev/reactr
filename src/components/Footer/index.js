@@ -11,7 +11,9 @@ function Footer(props) {
         GitHub
       </a>
       <div className="credits">
-        reactr :: <span className="subcredit">a memory game built with React</span>
+        <a className="reset-link" href="/">
+          <span className="subcredit">reactr</span> :: reset 
+        </a>
       </div>
     </footer>
   );

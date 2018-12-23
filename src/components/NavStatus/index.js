@@ -90,17 +90,17 @@ class NavStatus extends Component {
 
   render() {
     return (
-      <li
+      <div
         // IF animating: true, then className="correct" OR className="correct",
         // otherwise if animating: false, then className=""
         // .correct and .incorrect trigger discreet CSS animation effects
-        className={this.state.animating ? this.state.message : ""}
+        className={`message ${this.state.animating ? this.state.message : ""}`}
         // and when the CSS animation ends, reset state.animating: to false
         onAnimationEnd={() => this.setState({ animating: false })}
       >
         {/* immediately invoke renderMessage() to display its message output */}
         {this.renderMessage()}
-      </li>
+      </div>
     );
   }
 }
