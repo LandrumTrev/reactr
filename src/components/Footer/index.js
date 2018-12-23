@@ -6,9 +6,12 @@ import "./style.css";
 
 function Footer(props) {
   return (
-    <footer className="footer">
+    <footer className="footer fixed-bottom">
+      <a className="github-link" href="https://github.com/LandrumTrev/reactr" target="_blank" rel="noopener noreferrer">
+        GitHub
+      </a>
       <div className="credits">
-        Reactr :: a memory game built with React
+        reactr :: <span className="subcredit">a memory game built with React</span>
       </div>
     </footer>
   );
