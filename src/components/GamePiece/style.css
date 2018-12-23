@@ -1,27 +1,27 @@
 /* GamePiece style.css */
 
 .game-piece {
-  background-size: cover;
-  background-position: center;
-  height: 150px;
-  width: 150px;
-  margin: 8px 25px;
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* height: 3.5rem; */
+  /* width: 3.5rem; */
+  /* margin: 8px 25px; */
   /* border: 5px solid rgb(6, 33, 57); */
   border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.26);
-  cursor: pointer;
+  /* box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.26); */
+  /* cursor: pointer; */
   background-color: rgb(13, 49, 92);
-  fill: #eee;
+  /* fill: #eee; */
 }
 
 path {
-  fill: #eee;
+  /* fill: #eee; */
 }
 
 .game-piece:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22);
-  transition: 0.5s;
+  /* transform: scale(1.02); */
+  /* box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22); */
+  /* transition: 0.5s; */
 }
 
 .shake {
@@ -38,24 +38,104 @@ path {
   37.5%,
   62.5%,
   87.5% {
-    transform: translate(-10px);
+    transform: translate(-1px);
   }
 
   25%,
   50%,
   75% {
-    transform: translate(10px);
+    transform: translate(3px);
   }
 }
 
-@media (max-width: 750px) {
-  .click-item {
-    margin: 10px;
+@media (max-width: 360px) {
+  .game-piece {
+    margin: 8px;
+    height: 55px;
+    width: 55px;  
   }
 }
 
-@media (max-width: 500px) {
-  .click-item {
+@media (min-width: 360px) {
+  .game-piece {
+    margin: 9px;
+    height: 65px;
+    width: 65px;  
+  }
+}
+
+@media (min-width: 410px) {
+  .game-piece {
     margin: 10px;
+    height: 70px;
+    width: 70px;  
+  }
+}
+
+@media (min-width: 500px) {
+  .game-piece {
+    margin: 10px;
+    height: 85px;
+    width: 85px;  
+  }
+}
+
+@media (min-width: 580px) {
+  .game-piece {
+    margin: 15px;
+    height: 95px;
+    width: 95px;  
+  }
+}
+
+@media (min-width: 760px) {
+  .game-piece {
+    margin: 10px;
+    height: 115px;
+    width: 115px;  
+  }
+}
+
+@media (min-width: 768px) {
+  .game-piece {
+    margin: 15px;
+    height: 115px;
+    width: 115px;  
+  }
+}
+
+@media (min-width: 990px) {
+  .game-piece {
+    margin: 25px;
+    height: 150px;
+    width: 150px;  
+  }
+}
+
+@media (min-width: 1020px) {
+  .game-piece {
+    margin: 20px;
+  }
+}
+
+@media (min-width: 1055px) {
+  .game-piece {
+    margin: 18px;
+    height: 160px;
+    width: 160px;  
+  }
+}
+
+@media (min-width: 1100px) {
+  .game-piece {
+    margin: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .game-piece {
+    margin: 20px;
+    height: 170px;
+    width: 170px;  
   }
 }
