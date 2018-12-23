@@ -1,47 +1,82 @@
 [
   {
     "id": 1,
-    "image": "/assets/images/gp-a.jpg",
+    "image": "/assets/images/gp-01.svg",
     "clicked": false
   },
   {
     "id": 2,
-    "image": "/assets/images/gp-b.jpg",
+    "image": "/assets/images/gp-02.svg",
     "clicked": false
   },
   {
     "id": 3,
-    "image": "/assets/images/gp-c.jpg",
+    "image": "/assets/images/gp-03.svg",
     "clicked": false
   },
   {
     "id": 4,
-    "image": "/assets/images/gp-d.jpg",
+    "image": "/assets/images/gp-04.svg",
     "clicked": false
   },
   {
     "id": 5,
-    "image": "/assets/images/gp-e.jpg",
+    "image": "/assets/images/gp-05.svg",
     "clicked": false
   },
   {
     "id": 6,
-    "image": "/assets/images/gp-f.jpg",
+    "image": "/assets/images/gp-06.svg",
     "clicked": false
   },
   {
     "id": 7,
-    "image": "/assets/images/gp-g.jpg",
+    "image": "/assets/images/gp-07.svg",
     "clicked": false
   },
   {
     "id": 8,
-    "image": "/assets/images/gp-h.jpg",
+    "image": "/assets/images/gp-08.svg",
     "clicked": false
   },
   {
     "id": 9,
-    "image": "/assets/images/gp-i.jpg",
+    "image": "/assets/images/gp-09.svg",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "image": "/assets/images/gp-10.svg",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "image": "/assets/images/gp-11.svg",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "image": "/assets/images/gp-12.svg",
+    "clicked": false
+  },
+  {
+    "id": 13,
+    "image": "/assets/images/gp-13.svg",
+    "clicked": false
+  },
+  {
+    "id": 14,
+    "image": "/assets/images/gp-14.svg",
+    "clicked": false
+  },
+  {
+    "id": 15,
+    "image": "/assets/images/gp-15.svg",
+    "clicked": false
+  },
+  {
+    "id": 16,
+    "image": "/assets/images/gp-16.svg",
     "clicked": false
   }
 ]
