@@ -7,9 +7,11 @@ import "./style.css";
 function Jumbo(props) {
   return (
     <header className="jumbotron">
-      <div className="container">
-        <h1 className="display-4">Reactr</h1>
-        <h4 className="font-weight-light">Test your memory. Click on each element only once.</h4>
+      <div className="container pb-0">
+        <h1 className="font-weight-light mb-0">reactr</h1>
+      </div>
+      <div className="container pb-0">
+        <h4 className="font-weight-light">Test&nbsp;your&nbsp;memory. Click&nbsp;on&nbsp;each&nbsp;element&nbsp;only&nbsp;once.</h4>
       </div>
     </header>
   );

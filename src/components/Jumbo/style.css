@@ -2,6 +2,65 @@
 
 .jumbotron {
   background-color: #ccc;
-  height: 3rem;
-  /* text-align: left; */
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  background: #6cbbfc; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #6cbbfc 0%, #001244 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse farthest-corner, #6cbbfc 0%, #001244 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #6cbbfc 0%, #001244 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6cbbfc', endColorstr='#001244',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-size: 100% 600%;
+}
+
+h1 {
+  font-size: 3rem;
+  color: rgb(186, 217, 250);
+  letter-spacing: .03rem;
+}
+
+h4 {
+  font-size: 1rem;
+  color: rgb(160, 184, 211);
+}
+
+@media (min-width: 575px) {
+  .jumbotron {
+    padding-top: 30px;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 760px) {
+  .jumbotron {
+    padding-top: 40px;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    letter-spacing: 0.03rem;
+  }
+}
+
+@media (min-width: 990px) {
+  .jumbotron {
+    padding-top: 60px;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    letter-spacing: 0.03rem;
+  }
 }
