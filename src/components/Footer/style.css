@@ -1,9 +1,58 @@
 /* Footer style.css */
 
 .footer {
-  background-color: #888;
+  border-top: 2px solid #999;
+  /* background-color: #888; */
   color: #eee;
   width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5b5b5b+0,848484+9,7a7a7a+16,969696+24,a3a3a3+37,c1c1c1+46,bfbfbf+57,9e9e9e+65,a3a3a3+75,b7b7b7+81,a0a0a0+89,606060+100 */
+  background: rgb(91, 91, 91); /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    rgba(91, 91, 91, 1) 0%,
+    rgba(132, 132, 132, 1) 9%,
+    rgba(122, 122, 122, 1) 16%,
+    rgba(150, 150, 150, 1) 24%,
+    rgba(163, 163, 163, 1) 37%,
+    rgba(193, 193, 193, 1) 46%,
+    rgba(191, 191, 191, 1) 57%,
+    rgba(158, 158, 158, 1) 65%,
+    rgba(163, 163, 163, 1) 75%,
+    rgba(183, 183, 183, 1) 81%,
+    rgba(160, 160, 160, 1) 89%,
+    rgba(96, 96, 96, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(91, 91, 91, 1) 0%,
+    rgba(132, 132, 132, 1) 9%,
+    rgba(122, 122, 122, 1) 16%,
+    rgba(150, 150, 150, 1) 24%,
+    rgba(163, 163, 163, 1) 37%,
+    rgba(193, 193, 193, 1) 46%,
+    rgba(191, 191, 191, 1) 57%,
+    rgba(158, 158, 158, 1) 65%,
+    rgba(163, 163, 163, 1) 75%,
+    rgba(183, 183, 183, 1) 81%,
+    rgba(160, 160, 160, 1) 89%,
+    rgba(96, 96, 96, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(91, 91, 91, 1) 0%,
+    rgba(132, 132, 132, 1) 9%,
+    rgba(122, 122, 122, 1) 16%,
+    rgba(150, 150, 150, 1) 24%,
+    rgba(163, 163, 163, 1) 37%,
+    rgba(193, 193, 193, 1) 46%,
+    rgba(191, 191, 191, 1) 57%,
+    rgba(158, 158, 158, 1) 65%,
+    rgba(163, 163, 163, 1) 75%,
+    rgba(183, 183, 183, 1) 81%,
+    rgba(160, 160, 160, 1) 89%,
+    rgba(96, 96, 96, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5b5b', endColorstr='#606060',GradientType=1 ); /* IE6-9 */
 }
 
 .reset-link {

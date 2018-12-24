@@ -11,17 +11,18 @@
   background: radial-gradient(ellipse at center, #6cbbfc 0%, #001244 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6cbbfc', endColorstr='#001244',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   background-size: 100% 600%;
+  border-bottom: 1.5px solid #bbb;
 }
 
 h1 {
   font-size: 3rem;
-  color: rgb(186, 217, 250);
-  letter-spacing: .03rem;
+  color: rgb(211, 232, 255);
+  letter-spacing: 0.03rem;
 }
 
 h4 {
   font-size: 1rem;
-  color: rgb(160, 184, 211);
+  color: rgb(125, 190, 255);
 }
 
 @media (min-width: 575px) {

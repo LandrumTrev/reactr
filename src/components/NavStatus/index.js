@@ -78,9 +78,9 @@ class NavStatus extends Component {
     // the switch to test is the value of this.state.message
     switch (this.state.message) {
       case "correct":
-        return "You guessed wisely.";
+        return "You chose wisely.";
       case "incorrect":
-        return "You guessed incorrectly.";
+        return "You chose poorly.";
       default:
         return "Click a glyph to begin.";
     }

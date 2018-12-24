@@ -10,7 +10,7 @@
 
 @keyframes correct {
   0% {
-    color: #555;
+    color: #ddd;
   }
 
   50% {
@@ -18,13 +18,13 @@
   }
 
   100% {
-    color: #555;
+    color: #ddd;
   }
 }
 
 @keyframes incorrect {
   0% {
-    color: #555;
+    color: #ddd;
   }
 
   50% {
@@ -32,6 +32,6 @@
   }
 
   100% {
-    color: #555;
+    color: #ddd;
   }
 }

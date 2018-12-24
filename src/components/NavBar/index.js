@@ -18,7 +18,7 @@ function NavBar(props) {
           </li>
           <li className="display-score">
             {/* also use props: score and highScore here for direct display */}
-            <span className="high-score">{props.highScore} HIGH SCORE </span> • <span className="current-score"> CURRENT SCORE  {props.score}</span>
+            <span className="high-score">{props.highScore} :: HIGH SCORE </span> • <span className="current-score"> CURRENT SCORE :: {props.score}</span>
           </li>
         </ul>
     </nav>
