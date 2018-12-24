@@ -10,7 +10,7 @@
 
 @keyframes correct {
   0% {
-    color: #ddd;
+    color: rgb(225, 241, 255);
   }
 
   50% {
@@ -18,13 +18,13 @@
   }
 
   100% {
-    color: #ddd;
+    color: rgb(225, 241, 255);
   }
 }
 
 @keyframes incorrect {
   0% {
-    color: #ddd;
+    color: rgb(225, 241, 255);
   }
 
   50% {
@@ -32,6 +32,6 @@
   }
 
   100% {
-    color: #ddd;
+    color: rgb(225, 241, 255);
   }
 }
