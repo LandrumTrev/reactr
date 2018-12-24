@@ -1,21 +1,16 @@
 /* GamePiece style.css */
 
 .game-piece {
-  /* background-size: cover; */
-  /* background-position: center; */
+  background-size: cover;
+  background-position: center;
   /* height: 3.5rem; */
   /* width: 3.5rem; */
   /* margin: 8px 25px; */
   /* border: 5px solid rgb(6, 33, 57); */
   border-radius: 50%;
   /* box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.26); */
-  /* cursor: pointer; */
+  cursor: cell;
   background-color: rgb(13, 49, 92);
-  /* fill: #eee; */
-}
-
-path {
-  /* fill: #eee; */
 }
 
 .game-piece:hover {
@@ -25,7 +20,7 @@ path {
 }
 
 .shake {
-  animation: shake .5s 0.0125s;
+  animation: shake 0.5s 0.0125s;
 }
 
 @keyframes shake {
@@ -52,7 +47,7 @@ path {
   .game-piece {
     margin: 8px;
     height: 55px;
-    width: 55px;  
+    width: 55px;
   }
 }
 
@@ -60,7 +55,7 @@ path {
   .game-piece {
     margin: 9px;
     height: 65px;
-    width: 65px;  
+    width: 65px;
   }
 }
 
@@ -68,7 +63,7 @@ path {
   .game-piece {
     margin: 10px;
     height: 70px;
-    width: 70px;  
+    width: 70px;
   }
 }
 
@@ -76,7 +71,7 @@ path {
   .game-piece {
     margin: 10px;
     height: 85px;
-    width: 85px;  
+    width: 85px;
   }
 }
 
@@ -84,7 +79,7 @@ path {
   .game-piece {
     margin: 15px;
     height: 95px;
-    width: 95px;  
+    width: 95px;
   }
 }
 
@@ -92,7 +87,7 @@ path {
   .game-piece {
     margin: 10px;
     height: 115px;
-    width: 115px;  
+    width: 115px;
   }
 }
 
@@ -100,7 +95,7 @@ path {
   .game-piece {
     margin: 15px;
     height: 115px;
-    width: 115px;  
+    width: 115px;
   }
 }
 
@@ -108,7 +103,7 @@ path {
   .game-piece {
     margin: 25px;
     height: 150px;
-    width: 150px;  
+    width: 150px;
   }
 }
 
@@ -122,7 +117,7 @@ path {
   .game-piece {
     margin: 18px;
     height: 160px;
-    width: 160px;  
+    width: 160px;
   }
 }
 
@@ -136,6 +131,6 @@ path {
   .game-piece {
     margin: 20px;
     height: 170px;
-    width: 170px;  
+    width: 170px;
   }
 }
