@@ -13,7 +13,7 @@ _________________________________________________
 
 _________________________________________________
 
-#### reactr challenges the limits of your short-term memory with sixteen alien hieroglyphs. 
+#### reactr challenges the limits of your short-term memory with sixteen glyphs. 
 
 reactr is a client-side only React.js single-page application. The Master component holds the state of game play and renders all other components: NavBar (which renders NavStatus, which also holds state to determine and display the correct/incorrect click message), Jumbo (the Bootstrap jumbotron) title header, the GameBox and its render-mapped GamePieces, and the Footer.
 
